@@ -10,7 +10,7 @@ A Clojure/ Clojurescript library processing Json, including an implementation of
 
 To include in your project, add this to your `project.clj`:
 
-    [json-utils  "0.1.1"]
+    [json-utils  "0.1.3"]
     
 At present there are two key namespaces, `json-utils.pointer` for working with json pointers and `json-utils.traversal` for various ways of traversing and processing jsonic tree data structures, including a stateful version of `clojure.walk/prewalk`.
 

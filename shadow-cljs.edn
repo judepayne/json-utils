@@ -1,0 +1,15 @@
+{:dependencies  [[org.clojure/clojure "1.10.0"]
+                 [org.clojure/clojurescript "1.10.597"]
+	         [org.clojars.mmb90/cljs-cache "0.1.4"]
+                 [funcool/httpurr "2.0.0"]
+                 [funcool/promesa "5.1.0"]]
+
+ :source-paths ["src"]
+
+ :dev-http {9400 "public/"}
+
+ :builds {:app {:target :browser
+                :output-dir "public/js"
+                :asset-path "/js"
+                :modules {:main {:entries [json-utils.traversal]}}
+                :compiler-options {:infer-externs :auto}}}}
